@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White">
+
+    <ImageView
+        android:padding="@dimen/dp1"
+        android:id="@+id/img_back"
+        android:layout_margin="@dimen/dp7"
+        android:src="@drawable/btn_back"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintDimensionRatio="1:2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/pading_10dp"
+        android:padding="@dimen/pading_10dp"
+        android:src="@drawable/logo"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.45" />
+
+    <TextView
+        android:id="@+id/textView_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:text="@string/login_body_user"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/txt_15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo" />
+
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Nhập tên người dùng"
+        android:padding="10dp"
+        android:textColorHint="@color/Silver"
+        android:textCursorDrawable="@color/Silver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_login" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="@dimen/dp7"
+        android:src="@drawable/icon_username"
+        app:layout_constraintBottom_toBottomOf="@+id/edtUsername"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtUsername" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/dp3"
+        android:layout_marginRight="@dimen/dp3"
+        android:background="@color/Silver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtUsername" />
+
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pading_10dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Mật khẩu của bạn"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColorHint="@color/Silver"
+        android:textCursorDrawable="@color/Silver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtUsername" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="@dimen/dp7"
+        android:src="@drawable/icon_password"
+        app:layout_constraintBottom_toBottomOf="@+id/edtPass"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtPass" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="@dimen/dp7"
+        android:src="@drawable/icon_show_unpass"
+        app:layout_constraintBottom_toBottomOf="@+id/edtPass"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtPass" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/dp3"
+        android:layout_marginRight="@dimen/dp3"
+        android:background="@color/Silver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtPass" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ll_hotline"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.09"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/ic_call_red"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/ic_call_red"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_tongdai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Tổng đài CSKH"
+            android:textColor="@color/blue_text"
+            android:textSize="@dimen/txt_16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/ic_call_red"
+            app:layout_constraintStart_toEndOf="@id/ic_call_red"
+            app:layout_constraintTop_toTopOf="@+id/ic_call_red" />
+
+        <TextView
+            android:id="@+id/txt_tongdai_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="1900 1909"
+            android:textColor="@color/Red"
+            android:textSize="@dimen/txt_16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/ic_call_red"
+            app:layout_constraintStart_toEndOf="@id/txt_tongdai"
+            app:layout_constraintTop_toTopOf="@+id/ic_call_red" />
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txt_or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hoặc"
+        android:textColor="@color/blue_introduce"
+        android:textSize="@dimen/txt_15sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@id/ll_hotline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtPass" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dp5"
+        android:layout_marginRight="@dimen/dp5"
+        android:background="@color/blue_introduce"
+        app:layout_constraintBottom_toBottomOf="@id/txt_or"
+        app:layout_constraintEnd_toStartOf="@id/txt_or"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txt_or" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dp5"
+        android:layout_marginRight="@dimen/dp5"
+        android:background="@color/blue_introduce"
+        app:layout_constraintBottom_toBottomOf="@id/txt_or"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txt_or"
+        app:layout_constraintTop_toTopOf="@id/txt_or" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/spr_btn_login"
+        android:text="Đăng nhập"
+        android:textColor="@color/White"
+        android:textSize="@dimen/txt_15sp"
+        app:layout_constraintBottom_toTopOf="@id/txt_or"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtPass"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <Button
+        android:id="@+id/btn_login_phone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/spr_btn_login_red"
+        android:text="Đăng nhập bằng số điện thoại và Mã KH"
+        android:textAllCaps="false"
+        android:textColor="@color/White"
+        android:textSize="@dimen/txt_15sp"
+        app:layout_constraintBottom_toTopOf="@id/ll_hotline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_or"
+        app:layout_constraintWidth_percent="0.9" />
+</android.support.constraint.ConstraintLayout>

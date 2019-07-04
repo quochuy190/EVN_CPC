@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/White"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_bg_banner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/spr_gradient_banner"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view_centrer_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:layout_marginBottom="@dimen/pading_10dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/img_bg_banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_bg_banner" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_evn_banner"
+        app:layout_constraintBottom_toBottomOf="@id/img_bg_banner"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_bg_banner"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <ImageView
+        android:padding="@dimen/dp7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginRight="@dimen/pading_10dp"
+        android:src="@drawable/ic_search_banner"
+        app:layout_constraintBottom_toBottomOf="@id/img_bg_banner"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/img_bg_banner"
+        app:layout_constraintWidth_percent="0.15" />
+
+    <TextView
+        android:id="@+id/txt_title_tracuu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp2"
+        android:text="Tra cứu"
+        android:textColor="@color/White"
+        android:textSize="@dimen/txt_22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/view_centrer_banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp2"
+        android:text="Tìm kiếm thông tin"
+        android:textColor="@color/White"
+        android:textSize="@dimen/txt_16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_centrer_banner" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_bg_banner">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:background="@color/blue_introduce"
+                android:id="@+id/rcv_list_search_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </android.support.v7.widget.RecyclerView>
+            <View
+                android:background="@color/blue_introduce"
+                app:layout_constraintEnd_toEndOf="@+id/rcv_list_search_main"
+                app:layout_constraintTop_toTopOf="@+id/rcv_list_search_main"
+                app:layout_constraintBottom_toBottomOf="@+id/rcv_list_search_main"
+                app:layout_constraintStart_toStartOf="@+id/rcv_list_search_main"
+                android:layout_width="1dp"
+                android:layout_height="0dp"/>
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_website"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/dp7"
+                android:elevation="@dimen/dp5"
+                app:cardBackgroundColor="@color/blue_introduce"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="@dimen/dp5"
+                app:layout_constraintTop_toBottomOf="@+id/rcv_list_search_main"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintDimensionRatio="3:1"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/web_search" />
+
+                    <TextView
+                        android:id="@+id/txt_chamsoc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp7"
+                        android:layout_marginBottom="@dimen/dp5"
+                        android:text="Chăm sóc khách hàng"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/txt_15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txt_website"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp7"
+                        android:text="Website"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/txt_17sp"
+
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/txt_chamsoc"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <View
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_website"
+                android:layout_marginTop="@dimen/pading_10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>

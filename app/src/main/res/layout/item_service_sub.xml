@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/spr_click_view"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:padding="@dimen/pading_10dp"
+        android:id="@+id/ic_right_item_sub_service"
+        android:src="@drawable/ic_right"
+        app:layout_constraintWidth_percent="0.12"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <TextView
+        android:layout_marginLeft="@dimen/pading_10dp"
+        android:gravity="center_vertical"
+        android:text="abc"
+        android:textColor="@color/blue_introduce"
+        android:textSize="@dimen/txt_15sp"
+        android:id="@+id/txt_name_item_sub_service"
+        app:layout_constraintTop_toTopOf="@id/ic_right_item_sub_service"
+        app:layout_constraintBottom_toBottomOf="@id/ic_right_item_sub_service"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ic_right_item_sub_service"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <View
+        android:id="@+id/view_bottom"
+        android:layout_marginLeft="@dimen/pading_10dp"
+        android:layout_marginRight="@dimen/pading_10dp"
+        android:background="@color/blue_introduce"
+        app:layout_constraintTop_toBottomOf="@id/ic_right_item_sub_service"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</android.support.constraint.ConstraintLayout>

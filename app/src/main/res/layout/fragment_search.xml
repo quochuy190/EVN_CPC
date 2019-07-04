@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White">
+
+    <ImageView
+        android:id="@+id/img_bg_banner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/spr_gradient_banner"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:id="@+id/view_centrer_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:layout_marginBottom="@dimen/pading_10dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/img_bg_banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_bg_banner" />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_evn_banner"
+        app:layout_constraintBottom_toBottomOf="@id/img_bg_banner"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_bg_banner"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginRight="@dimen/pading_10dp"
+        android:src="@drawable/ic_search_banner"
+        app:layout_constraintBottom_toBottomOf="@id/img_bg_banner"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/img_bg_banner"
+        app:layout_constraintWidth_percent="0.13" />
+
+    <TextView
+        android:padding="@dimen/dp2"
+        android:id="@+id/txt_title_tracuu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tra cứu"
+        android:textColor="@color/White"
+        android:textSize="@dimen/txt_22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/view_centrer_banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tìm kiếm thông tin"
+        android:textColor="@color/White"
+        android:textSize="@dimen/txt_16sp"
+        android:padding="@dimen/dp2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_centrer_banner" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_website"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/dp8"
+        android:elevation="@dimen/dp5"
+        app:cardBackgroundColor="@color/blue_introduce"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="@dimen/dp5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.11"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/spr_gradient_banner" />
+
+            <TextView
+                android:id="@+id/txt_chamsoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp7"
+                android:layout_marginBottom="@dimen/dp5"
+                android:text="Chăm sóc khách hàng"
+                android:textColor="@color/White"
+                android:textSize="@dimen/txt_15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp7"
+                android:text="Website"
+                android:textColor="@color/White"
+                android:textSize="@dimen/txt_17sp"
+
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/txt_chamsoc"
+                app:layout_constraintStart_toStartOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:id="@+id/view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:layout_marginBottom="@dimen/dp5"
+        android:background="@drawable/spr_gradient_banner"
+        app:layout_constraintBottom_toTopOf="@+id/card_website"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view_centrer_hori"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@drawable/spr_gradient_banner"
+        app:layout_constraintBottom_toTopOf="@+id/view_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_bg_banner" />
+
+    <View
+        android:id="@+id/view_top_ver"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:layout_marginBottom="@dimen/pading_10dp"
+        android:background="@drawable/spr_gradient_banner"
+        app:layout_constraintBottom_toTopOf="@+id/view_centrer_ver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_bg_banner" />
+
+
+
+    <View
+        android:id="@+id/view_centrer_ver"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:layout_marginBottom="@dimen/pading_10dp"
+        android:background="@drawable/spr_gradient_banner"
+        app:layout_constraintBottom_toTopOf="@+id/view_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_top_ver" />
+
+    <android.support.constraint.ConstraintLayout
+        android:background="@drawable/spr_click_view"
+        android:id="@+id/ll_search_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/view_top_ver"
+        app:layout_constraintEnd_toStartOf="@id/view_centrer_hori"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_bg_banner">
+
+        <ImageView
+            android:id="@+id/img_search_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/ic_search_1"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/txt_search_1"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/txt_15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_search_1" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:background="@drawable/spr_click_view"
+        android:id="@+id/ll_search_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/view_top_ver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/view_centrer_hori"
+        app:layout_constraintTop_toBottomOf="@+id/img_bg_banner">
+
+        <ImageView
+            android:id="@+id/img_search_2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/img_search_2"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/txt_search_2"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/txt_15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_search_2" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:background="@drawable/spr_click_view"
+        android:id="@+id/ll_search_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/view_centrer_ver"
+        app:layout_constraintEnd_toStartOf="@id/view_centrer_hori"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_top_ver">
+
+        <ImageView
+            android:id="@+id/img_search_3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/img_search_3"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/txt_search_3"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/txt_15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_search_3" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:background="@drawable/spr_click_view"
+        android:id="@+id/ll_search_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/view_centrer_ver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/view_centrer_hori"
+        app:layout_constraintTop_toBottomOf="@+id/view_top_ver">
+
+        <ImageView
+            android:id="@+id/img_search_4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/img_search_4"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/txt_search_4"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/txt_15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_search_4" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:background="@drawable/spr_click_view"
+        android:id="@+id/ll_search_5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/view_bottom"
+        app:layout_constraintEnd_toStartOf="@id/view_centrer_hori"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_centrer_ver">
+
+        <ImageView
+            android:id="@+id/img_search_5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/ic_search_5"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/txt_search_5"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/txt_15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_search_5" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:background="@drawable/spr_click_view"
+        android:id="@+id/ll_search_6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/view_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/view_centrer_hori"
+        app:layout_constraintTop_toBottomOf="@+id/view_centrer_ver">
+
+        <ImageView
+            android:id="@+id/img_search_6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/img_search_6"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/txt_search_6"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/txt_15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_search_6" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

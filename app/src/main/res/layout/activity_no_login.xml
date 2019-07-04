@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/White"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ll_login"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/spr_gradient_banner"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_invite_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pading_10dp"
+            android:gravity="left"
+            android:padding="@dimen/pading_10dp"
+            android:text="@string/no_login"
+            android:textColor="@color/White"
+            android:textSize="@dimen/txt_15sp"
+            app:layout_constraintBottom_toTopOf="@+id/button_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/pading_10dp"
+            android:background="@drawable/spr_btn_login_red"
+            android:text="ĐĂNG NHẬP"
+            android:textColor="@color/White"
+            android:textSize="@dimen/txt_15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.32"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_invite_login"
+            app:layout_constraintWidth_percent="0.4" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ll_cotdien"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_login">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_cotdien" />
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/pading_10dp"
+            android:src="@drawable/logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintHeight_percent="0.65"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Thắp sang niềm tin"
+            android:textColor="@color/blue_text"
+            android:textSize="@dimen/txt_15sp"
+            app:layout_constraintBottom_toBottomOf="@id/img_logo"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/img_logo"
+            app:layout_constraintTop_toTopOf="@+id/img_logo" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ll_hotline"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/ic_call_red"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_call_red"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_tongdai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Tổng đài CSKH"
+            android:textColor="@color/blue_text"
+            android:textSize="@dimen/txt_16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/ic_call_red"
+            app:layout_constraintStart_toEndOf="@id/ic_call_red"
+            app:layout_constraintTop_toTopOf="@+id/ic_call_red" />
+
+        <TextView
+            android:id="@+id/txt_tongdai_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="1900 1909"
+            android:textColor="@color/Red"
+            android:textSize="@dimen/txt_16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/ic_call_red"
+            app:layout_constraintStart_toEndOf="@id/txt_tongdai"
+            app:layout_constraintTop_toTopOf="@+id/ic_call_red" />
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txt_untilliti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Tiện ích"
+        android:textColor="@color/Black"
+
+        android:textSize="@dimen/txt_16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_cotdien" />
+
+    <android.support.constraint.ConstraintLayout
+        android:background="@drawable/spr_click_view"
+        android:id="@+id/ll_register"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/ll_web"
+        app:layout_constraintEnd_toStartOf="@id/ll_guild"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_untilliti">
+
+        <ImageView
+            android:padding="@dimen/dp5"
+            android:id="@+id/img_gioithieu_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/icon_gioi_thieu_1"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/txt_gioithieu_1"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/txt_15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_gioithieu_1" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:background="@drawable/spr_click_view"
+        android:id="@+id/ll_guild"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/ll_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ll_register"
+        app:layout_constraintTop_toBottomOf="@+id/txt_untilliti">
+        <ImageView
+            android:padding="@dimen/dp5"
+            android:id="@+id/img_gioithieu_2"
+            android:src="@drawable/icon_gioi_thieu_2"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintHeight_percent="0.6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+        <TextView
+            android:textColor="@color/Black"
+            android:textSize="@dimen/txt_15sp"
+            android:gravity="center"
+            android:text="@string/txt_gioithieu_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_gioithieu_2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:background="@drawable/spr_click_view"
+        android:id="@+id/ll_web"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/ll_hotline"
+        app:layout_constraintEnd_toStartOf="@id/ll_info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_register">
+        <ImageView
+            android:padding="@dimen/dp5"
+            android:id="@+id/img_gioithieu_3"
+            android:src="@drawable/icon_gioi_thieu_2"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintHeight_percent="0.6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+        <TextView
+            android:textColor="@color/Black"
+            android:textSize="@dimen/txt_15sp"
+            android:gravity="center"
+            android:text="@string/txt_gioithieu_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_gioithieu_3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:background="@drawable/spr_click_view"
+        android:id="@+id/ll_info"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/ll_hotline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ll_register"
+        app:layout_constraintTop_toBottomOf="@id/ll_register">
+        <ImageView
+            android:padding="@dimen/dp5"
+            android:id="@+id/img_gioithieu_4"
+            android:src="@drawable/icon_gioi_thieu_4"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintHeight_percent="0.6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+        <TextView
+            android:textColor="@color/Black"
+            android:textSize="@dimen/txt_15sp"
+            android:gravity="center"
+            android:text="@string/txt_gioithieu_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_gioithieu_4"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

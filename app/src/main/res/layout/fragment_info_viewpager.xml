@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_home_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/pading_10dp"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginRight="@dimen/pading_10dp"
+            app:cardCornerRadius="@dimen/pading_10dp"
+            app:cardElevation="@dimen/dp7"
+            app:layout_constraintDimensionRatio="4.5:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:background="@drawable/spr_click_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_title_invoice"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="@dimen/dp3"
+                    android:gravity="bottom"
+                    android:padding="@dimen/dp2"
+                    android:text="Hoá đơn tiền điện"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/txt_15sp"
+                    app:layout_constraintBottom_toTopOf="@id/txt_invoice"
+                    app:layout_constraintEnd_toStartOf="@+id/txt_title_total_money"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_invoice"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="@dimen/dp3"
+                    android:padding="@dimen/dp2"
+                    android:text="Kỳ 1 tháng 5, 2019"
+                    android:textColor="@color/blue_introduce"
+                    android:textSize="@dimen/txt_15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/txt_title_total_money"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_title_invoice" />
+
+                <TextView
+                    android:id="@+id/txt_title_total_money"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginRight="@dimen/dp3"
+                    android:gravity="right|bottom"
+                    android:padding="@dimen/dp2"
+                    android:text="Tổng tiền"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/txt_15sp"
+                    app:layout_constraintBottom_toTopOf="@id/txt_total_money"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/txt_title_invoice"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_total_money"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginRight="@dimen/dp3"
+                    android:gravity="right"
+                    android:padding="@dimen/dp2"
+                    android:text="20.000 VND"
+                    android:textColor="@color/red_money"
+                    android:textSize="@dimen/txt_15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/txt_title_invoice"
+                    app:layout_constraintTop_toBottomOf="@id/txt_title_total_money" />
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_home_2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/pading_10dp"
+            android:layout_marginTop="@dimen/pading_10dp"
+            android:layout_marginRight="@dimen/pading_10dp"
+            app:cardCornerRadius="@dimen/pading_10dp"
+            app:cardElevation="@dimen/dp7"
+            app:layout_constraintDimensionRatio="4.5:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_home_1">
+
+            <android.support.constraint.ConstraintLayout
+                android:background="@drawable/spr_click_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_title_chiso_cuoiky"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="@dimen/dp3"
+                    android:gravity="bottom"
+                    android:padding="@dimen/dp2"
+                    android:text="Chỉ số cuối kỳ"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/txt_15sp"
+                    app:layout_constraintBottom_toTopOf="@id/txt_chiso_cuoiky"
+                    app:layout_constraintEnd_toStartOf="@+id/txt_title_card_2"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_chiso_cuoiky"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="@dimen/dp3"
+                    android:padding="@dimen/dp2"
+                    android:text="11.620"
+                    android:textColor="@color/blue_introduce"
+                    android:textSize="@dimen/txt_15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/txt_title_card_2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_title_chiso_cuoiky" />
+
+                <TextView
+                    android:id="@+id/txt_title_card_2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginRight="@dimen/dp3"
+                    android:gravity="right|bottom"
+                    android:padding="@dimen/dp2"
+                    android:text="Điện năng tiêu thụ"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/txt_15sp"
+                    app:layout_constraintBottom_toTopOf="@id/txt_card_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/txt_title_chiso_cuoiky"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_card_2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginRight="@dimen/dp3"
+                    android:gravity="right"
+                    android:padding="@dimen/dp2"
+                    android:text="257 kWh"
+                    android:textColor="@color/blue_introduce"
+                    android:textSize="@dimen/txt_15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/txt_title_chiso_cuoiky"
+                    app:layout_constraintTop_toBottomOf="@id/txt_title_card_2" />
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_home_3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/pading_10dp"
+            android:layout_marginTop="@dimen/pading_10dp"
+            android:layout_marginRight="@dimen/pading_10dp"
+            app:cardCornerRadius="@dimen/pading_10dp"
+            app:cardElevation="@dimen/dp7"
+            app:layout_constraintDimensionRatio="4.5:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_home_2">
+
+            <android.support.constraint.ConstraintLayout
+                android:background="@drawable/spr_click_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_title_card_3_1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="@dimen/dp3"
+                    android:gravity="bottom"
+                    android:padding="@dimen/dp2"
+                    android:singleLine="true"
+                    android:text="Chỉ số thu thập công tơ"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/txt_15sp"
+                    app:layout_constraintBottom_toTopOf="@id/txt_card_3_1"
+                    app:layout_constraintEnd_toStartOf="@+id/txt_title_card_3_2"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_card_3_1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="@dimen/dp3"
+                    android:padding="@dimen/dp2"
+                    android:text="16,187"
+                    android:textColor="@color/blue_introduce"
+                    android:textSize="@dimen/txt_15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/txt_title_card_3_2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_title_card_3_1" />
+
+                <TextView
+                    android:id="@+id/txt_title_card_3_2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginRight="@dimen/dp3"
+                    android:gravity="right|bottom"
+                    android:padding="@dimen/dp2"
+                    android:text="17/06/2019 14:20"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/txt_15sp"
+                    app:layout_constraintBottom_toTopOf="@id/txt_card_3_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/txt_title_card_3_1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_card_3_2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginRight="@dimen/dp3"
+                    android:gravity="right"
+                    android:padding="@dimen/dp2"
+                    android:text="65 kWh"
+                    android:textColor="@color/blue_introduce"
+                    android:textSize="@dimen/txt_15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/txt_title_card_3_1"
+                    app:layout_constraintTop_toBottomOf="@id/txt_title_card_3_2" />
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_web_pay_online"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/pading_10dp"
+            android:layout_marginTop="@dimen/pading_10dp"
+            android:layout_marginRight="@dimen/pading_10dp"
+            app:cardCornerRadius="@dimen/pading_10dp"
+            app:cardElevation="@dimen/dp7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.27"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_home_3">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/web_pay_home" />
+
+                <TextView
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/helve_bold"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/pading_10dp"
+                    android:text="Thanh toán trực tuyến"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/txt_16sp"
+                    android:textStyle="bold" />
+            </android.support.constraint.ConstraintLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pading_10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_web_pay_online" />
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

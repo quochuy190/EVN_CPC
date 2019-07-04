@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--base-->
+    <string name="error">Lỗi</string>
+    <string name="txt_loading_dialog">Đang tải. Vui lòng đợi...</string>
+    <string name="error_network">Lỗi kết nối</string>
+    <string name="error_network_message">Lỗi kết nối, vui lòng kiểm tra mạng và thử lại</string>
+    <string name="app_name">EVNCPC CSKH</string>
+    <string name="splash_text1">Trung tâm Chăm sóc khách hàng\n Tổng công ty Điện Lực Miền Trung</string>
+    <string name="home_title">Thông báo</string>
+    <string name="option">Tùy chọn</string>
+    <string name="option_view">Xem</string>
+    <string name="no_data">Chưa có dữ liệu mới!</string>
+    <string name="option_download">Tải xuống</string>
+    <string name="activity_register_name">Đăng ký</string>
+    <string name="introduce">\tỨng dụng chăm sóc khách hàng qua thiết bị di động của Tổng công ty điện lực Miền Trung. \n\n\tỨng dụng hoàn toàn miễn phí. Để sử dụng xin mời chọn nút tiếp tục phía dưới.</string>
+    <string name="no_login">Để sử dụng đầy đủ các tính năng \nMời quý Khách hàng bấm vào nút Đăng nhập</string>
+    <string name="active_title">Hệ thống vừa gửi mã khích hoạt vào máy của khách hàng.
+        Vui lòng nhập mã kích hoạt vào ô bên dưới.</string>
+    <string name="active_note">\tNếu không nhận được mã kích hoạt trong 5 phút, quý khách vui lòng gọi tới tổng đài 1900 1909 để được hỗ trợ.</string>
+    <string name="setup_title">Để bảo mật ứng dụng của mình bạn vui lòng cài đặt mật khẩu trước khi sử dụng</string>
+    <string name="login_body">Nhập số điện thoại để kích hoạt ứng dụng. \nSố điện thoại hợp lệ là số điện thoại đã được đăng ký nhận thông báo với điện lực</string>
+    <string name="login_body_user">Mời quý khách hàng nhập tài khoản đã có trên Web cskh.cpc.vn để đăng nhập vào tài khoản</string>
+    <string name="active_edittext_hint">Nhập mã</string>
+    <string name="active_button">Kích hoạt</string>
+    <string name="btn_setup_accept">Chấp nhận</string>
+    <string name="btn_setup_deny"> Bỏ qua</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+
+    <string name="txt_gioithieu_1">Đăng ký\n cấp điện mới</string>
+    <string name="txt_gioithieu_2">Hướng dẫn\n sử dụng</string>
+    <string name="txt_gioithieu_3">Website\n CSKH</string>
+    <string name="txt_gioithieu_4">Thông tin\n ứng dụng</string>
+    <string name="title_home">Trang chủ</string>
+    <string name="title_notify">Thông báo</string>
+    <string name="title_search">Tra cứu</string>
+    <string name="title_service">Dịch vụ</string>
+    <string name="title_setup">Cài đặt</string>
+
+    <string name="txt_search_1">Lịch ghi điện</string>
+    <string name="txt_search_2">Điểm thu\ntiền điện</string>
+    <string name="txt_search_3">Tra cứu\nlịch cắt điện</string>
+    <string name="txt_search_4">Tra cứu\nchỉ số công tơ</string>
+    <string name="txt_search_5">Thông tin thanh toán\ntiền điện</string>
+    <string name="txt_search_6">Thông báo\nthanh toán</string>
+
+    <string name="txt_setup_guild">Hướng dẫn sử dụng</string>
+    <string name="txt_setup_info">Thông tin ứng dụng</string>
+    <string name="txt_setup_change_pass">Thay đổi mật khẩu</string>
+    <string name="txt_setup_logout">Đăng xuất</string>
+    <string name="txt_notify_banner">Tiền điện, sự cố mất điên ...\nvà các thông tin liên quan </string>
+
+    <string name="txt_service_sub_1_0">Cấp điện sinh hoạt</string>
+    <string name="txt_service_sub_1_1">Cấp điện ngoài sinh hoạt</string>
+
+    <string name="txt_service_sub_2_0">Thay đổi công suất sử dụng điện/ thay đổi loại công tơ</string>
+    <string name="txt_service_sub_2_1">Thay đổi vị trí thiết bị đo đếm</string>
+    <string name="txt_service_sub_2_2">Thay đổi mục đích sử dụng điện</string>
+    <string name="txt_service_sub_2_3">Thay đổi định mức sử dụng điện</string>
+    <string name="txt_service_sub_2_4">Thay đổi chủ thể hợp đồng mua bán điện</string>
+    <string name="txt_service_sub_2_5">Kiểm tra công tơ và thiết bị đo đếm</string>
+    <string name="txt_service_sub_2_6">Cấp điện trở lại khi khách hàng đã tạm ngừng sử dụng điện</string>
+    <string name="txt_service_sub_2_7">Thay đổi thông tin đã đăng ký</string>
+    <string name="txt_service_sub_2_8">Thay đổi hình thức thanh toán điện</string>
+    <string name="txt_service_sub_2_9">Xử lý báo mất điện</string>
+    <string name="txt_service_sub_2_10">Gia hạn hợp đồng mua bán điện</string>
+    <string name="txt_service_sub_2_11">Chấm dứt hợp đồng mua bán điện</string>
+    <string name="txt_service_sub_2_12">Thanh toán trực tuyến</string>
+
+    <string name="txt_service_sub_3_0">Dịch vụ tra cứu thông tin</string>
+    <string name="txt_service_sub_3_1">Tư vấn sử dụng dịch vụ điện</string>
+    <string name="txt_service_sub_3_2">Tư vấn thiết kế, xây dựng nghiệm thu, bảo trì/ bảo dưỡng, vận hành công trình điện</string>
+    <string name="txt_service_sub_3_3">Giải đáp kiến nghị của khách hàng</string>
+</resources>
